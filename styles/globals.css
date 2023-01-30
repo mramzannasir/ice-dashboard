@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .wrapper {
+    @apply flex w-full h-full flex-col;
+  }
+  .contain {
+    @apply flex w-full h-full flex-col s;
+  }
+  .headings {
+    @apply text-[25px]  leading-9;
+  }
+  .title {
+    @apply text-[16px] leading-6;
+  }
+  .subtitle {
+    @apply font-normal text-[16px] leading-6;
+  }
+  .description {
+    @apply font-normal text-[10px] 2xl:text-[12px]  leading-4;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  transition: 500ms all;
+  overflow-x: hidden;
+}
+.login-bg {
+  background: linear-gradient(73.25deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+ion-icon {
+  font-size: 38px;
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.63));
+  color: white;
+}
+.right-card {
+  background: #f9f9f9;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+}
+.nt {
+  position: relative;
+  transition: 500ms all;
+}
+.nt::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  background: #ffffff;
+  border-radius: 10px;
+  width: 5px;
+  height: 30px;
+}
+
+.mt {
+  position: relative;
+  transition: 500ms all;
+}
+.mt::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: -0.2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  width: 30px;
+  height: 3px;
+}
