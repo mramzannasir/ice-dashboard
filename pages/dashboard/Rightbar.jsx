@@ -14,12 +14,11 @@ const Rightbar = () => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
-        className={`wrapper bg-white transition-all justify-center  mx-auto  h-[36rem] duration-500 md:h-[46rem] w-[90%]   right-card `}>
-        <section className="w-full h-full flex justify-center">
-          <div
-            className={` transition-all duration-500  xl:w-[350px]  pl-6 py-2 md:py-4  `}>
+        className={`wrapper bg-white transition-all justify-center  mx-auto  h-[30rem] duration-500 md:h-[45rem] w-[100%] right-card `}>
+        <section className="w-full h-full flex justify-center items-center px-2 ">
+          <div className={` transition-all duration-500  xl:w-[100%]   `}>
             <h1 className="headings font-medium">Today’s tasks</h1>
-            <div className="mt-4 md:mt-7 flex items-center gap-5">
+            <div className="mt-4  flex items-center gap-5">
               <div className="h-[45px] w-[45px] cursor-pointer flex justify-center items-center bg-[#3AC237] rounded-xl">
                 <MdDone size={30} color="white" />
               </div>

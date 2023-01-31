@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <SidebarContext.Provider value={{ width, setWidth, show, setShow }}>
-        <div className="  relative w-full flex  transition-all duration-500">
+        <div className="relative w-full flex justify-center  transition-all duration-500">
           {/* RightBarshow_________btn_______________________________ */}
 
           <div
@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
               width ? "w-[90%]" : "w-[96%]"
             } transition-all  duration-500`}>
             {/* Navbar__________________________________________________________________________________ */}
-            <div className="w-full h-[15%]">
+            <div className="w-full h-[6%] md:h-[10%] lg:h-[15%]">
               <Navbar />
             </div>
             {/* Child ___________________________________________________________________________________________________________ */}
@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
                 href="/"
                 className={
                   router.pathname === "/home"
-                    ? "scale-100  block w-[20%]"
+                    ? "scale-100  block xl:w-[20%]"
                     : "scale-0 hidden "
                 }>
                 <div
