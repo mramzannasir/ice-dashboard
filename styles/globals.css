@@ -11,7 +11,7 @@
     @apply flex w-full h-full flex-col s;
   }
   .headings {
-    @apply text-[25px]  leading-9;
+    @apply text-[25px]  leading-9 font-medium;
   }
   .title {
     @apply text-[16px] leading-6;
