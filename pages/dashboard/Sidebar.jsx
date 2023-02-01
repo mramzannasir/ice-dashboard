@@ -60,6 +60,20 @@ const Sidebar = () => {
               </>
             ))}
           </div>
+          <div className="absolute bottom-4 flex justify-center w-full">
+            <div
+              className={`${
+                width ? "pl-8" : "justify-center "
+              } cursor-pointer gap-8  flex   w-full`}>
+              <img src="/setting.png" alt="setting icons" />
+              <span
+                className={`text-sm text-white opacity-50 font-normal transition-all duration-300 ${
+                  width ? "block" : "hidden"
+                }`}>
+                Setting
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </>
