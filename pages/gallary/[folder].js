@@ -18,10 +18,10 @@ const folder = () => {
                 transition={{ type: "spring", duration: 1 }}
                 className="px-4">
                 <div className="w-full">
-                    <h1 className="headings">{slug}</h1>
+                    <h1 className="headings">Folder-1</h1>
                 </div>
                 <div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 5xl:grid-cols-6 gap-5">
+                    <div className="grid grid-cols-1 mt-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 5xl:grid-cols-6 gap-5">
                         <div>
                             <div
                                 className="xl:w-[332px] overflow-hidden h-[232px]  rounded-xl">
