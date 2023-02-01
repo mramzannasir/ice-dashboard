@@ -21,7 +21,7 @@ const Sidebar = () => {
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       />
       <div>
-        <div className="flex flex-col relative bg-blue  h-screen transition-all duration-500">
+        <div className="flex flex-col relative bg-blue  h-screen lg:h-[90rem] xl:h-screen transition-all duration-500">
           <div>
             <button
               onClick={() => setWidth(!width)}

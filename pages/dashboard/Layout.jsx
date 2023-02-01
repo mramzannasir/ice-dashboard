@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <SidebarContext.Provider value={{ width, setWidth, show, setShow }}>
-        <div className="relative w-full  flex justify-center h-full  transition-all duration-500">
+        <div className="relative w-full  flex justify-center h-full  transition-all duration-500 overflow-hidden">
           {/* Sidebar______________________________________________________________________________________ */}
           <div
             className={`${
