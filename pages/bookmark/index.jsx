@@ -4,7 +4,11 @@ import Layout from "../dashboard/Layout";
 const index = () => {
   return (
     <>
-      <Layout>Bookmark</Layout>
+      <Layout>
+        <div className="flex justify-center items-center h-full w-full">
+          Bookmark empty
+        </div>
+      </Layout>
     </>
   );
 };
