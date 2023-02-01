@@ -12,26 +12,18 @@ const Layout = ({ children }) => {
   const [width, setWidth] = useState(false);
   const [show, setShow] = useState(false);
   const router = useRouter();
-  const handleClick = () => {
-    setShow(!show);
-  };
+
   return (
     <>
       <SidebarContext.Provider value={{ width, setWidth, show, setShow }}>
-        <div className="relative w-full flex justify-center  transition-all duration-500">
-          {/* RightBarshow_________btn_______________________________ */}
-
-          <div
-            onClick={handleClick}
-            className="right-[1.5rem] top-[5rem] cursor-pointer xxl:hidden absolute bg-red-500 text-white ">
-            <img src="/calender.png" alt="" />
-          </div>
-
+        <div className="relative w-full  flex justify-center h-full  transition-all duration-500">
           {/* Sidebar______________________________________________________________________________________ */}
           <div
             className={`${
-              width ? "w-[10%]" : "w-[4%]"
-            } w-[10%] h-full hidden lg:block  transition-all duration-500`}>
+              width
+                ? "w-[10%] lg:w-[20%] xl:w-[12%] 2xl:[10%]"
+                : "w-[4%] lg:w-[7%] xl:w-[5%] 2xl:w-[4%]"
+            } w-[10%] h-full hidden lg:block transition-all duration-500`}>
             <Sidebar />
           </div>
           <div
@@ -39,11 +31,11 @@ const Layout = ({ children }) => {
               width ? "w-[90%]" : "w-[96%]"
             } transition-all  duration-500`}>
             {/* Navbar__________________________________________________________________________________ */}
-            <div className="w-full h-[6%] md:h-[10%] lg:h-[15%]">
+            <div className="w-full h-[4%] md:h-[10%] lg:h-[15%]">
               <Navbar />
             </div>
             {/* Child ___________________________________________________________________________________________________________ */}
-            <div className="h-[85%] w-full flex transition-all duration-500">
+            <div className="h-[100%] w-full flex transition-all duration-500">
               <div
                 className={`bg-primary w-[100%] transition-all duration-500`}>
                 {children}
@@ -52,20 +44,20 @@ const Layout = ({ children }) => {
                 href="/"
                 className={
                   router.pathname === "/home"
-                    ? "scale-100  block xl:w-[20%]"
+                    ? "scale-100 hidden xl:block  w-[25%] "
                     : "scale-0 hidden "
                 }>
                 <div
-                  className={` ${
-                    show ? "scale-100" : "scale-0"
-                  } transition-all xxl:scale-100 absolute xxl:static right-0 2xl:pr-6 duration-500`}>
+                  className={`${
+                    width ? "" : "scale-100"
+                  } transition-all  absolute xxl:static right-0 2xl:pr-6 duration-500`}>
                   <Rightbar />
                 </div>
               </Link>
             </div>
           </div>
           {/* Bottom bar _____________________________________________________________________________________________ */}
-          <div className="lg:hidden w-full h-[3.4rem] fixed bottom-0 bg-blue text-white">
+          <div className="lg:hidden w-full h-[3.4rem]  fixed bottom-0 bg-blue text-white">
             <div className="flex justify-between px-2 items-center h-full w-full">
               {Data.map((items, index) => (
                 <>

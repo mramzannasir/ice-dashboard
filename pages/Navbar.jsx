@@ -3,10 +3,18 @@ import { CiSearch } from "react-icons/ci";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { BiChevronDown } from "react-icons/bi";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+  const router = useRouter();
+  const inFo = () => {
+    router.replace("information/Faq");
+  };
+
   return (
-    <main className="wrapper bg-white ">
+    <main
+      className="
+     bg-white ">
       <section className="flex items-center w-full pt-[15px] 2xl:pt-[28px] px-1 2xl:px-6 justify-between">
         <div>
           <div className="h-[35px] md:h-[44px] w-[190px] md:w-[350px] rounded-xl 2xl:max-w-[503px] border-borderwhite  border-[1px] px-4 2xl:px-2 flex items-center justify-between">
@@ -33,7 +41,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex gap-4 md:gap-3 2xl:gap-6 items-center">
-          <div className="cursor-pointer">
+          <div className="cursor-pointer" onClick={inFo}>
             <AiOutlineInfoCircle className="text-[1.4rem] md:text-2xl" />
           </div>
           <div className="cursor-pointer">

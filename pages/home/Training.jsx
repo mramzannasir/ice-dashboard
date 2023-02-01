@@ -18,7 +18,7 @@ const Training = () => {
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.4, opacity: 0 }}
           transition={{ type: "spring", duration: 1 }}>
-          <div className="px-4">
+          <div className="px-4 mt-[4rem] md:mt-[3rem] lg:mt-0">
             <div
               onClick={handleClick}
               className="flex justify-start items-center gap-1 pl-2  cursor-pointer">

@@ -8,10 +8,10 @@
     @apply flex w-full h-full flex-col;
   }
   .contain {
-    @apply flex w-full h-full flex-col s;
+    @apply flex w-full h-full flex-col;
   }
   .headings {
-    @apply text-[25px]  leading-9 font-medium;
+    @apply text-[30px]  leading-9 font-medium;
   }
   .title {
     @apply text-[16px] leading-6;

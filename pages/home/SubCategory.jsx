@@ -21,7 +21,8 @@ const SubCategory = () => {
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.4, opacity: 0 }}
-          transition={{ type: "spring", duration: 1 }}>
+          transition={{ type: "spring", duration: 1 }}
+          className="wrapper mt-[4rem] md:mt-0">
           <div className="px-4">
             <div
               onClick={handleClick}
@@ -39,7 +40,7 @@ const SubCategory = () => {
               </div>
             </div>
             {/* Today */}
-            <div className="w-full h-full flex flex-col mt-6">
+            <div className="w-full h-full flex flex-col mt-1">
               <div className="flex  items-center justify-between w-full">
                 <div>
                   <h1 className="text-[18px] leading-7 font-medium">Today</h1>
@@ -52,7 +53,7 @@ const SubCategory = () => {
                 <div></div>
               </div>
               {/* _____________________________________________Items___________________________________________ */}
-              <div className="flex flex-col w-full gap-2 justify-center mt-4 items-center md:justify-start md:items-start">
+              <div className="flex flex-col w-full gap-2 justify-center mt-2 items-center md:justify-start md:items-start">
                 {/* Children */}
                 <div
                   onClick={goTo}
