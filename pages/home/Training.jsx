@@ -8,7 +8,7 @@ import { BiDotsVerticalRounded } from "react-icons/bi";
 const Training = () => {
   const router = useRouter();
   const handleClick = () => {
-    router.replace("/home");
+    router.replace("/home/SubCategory");
   };
   return (
     <>

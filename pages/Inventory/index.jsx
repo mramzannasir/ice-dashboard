@@ -11,7 +11,7 @@ const index = () => {
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.4, opacity: 0 }}
           transition={{ type: "spring", duration: 1 }}>
-          <main className="px-4 mt-[3rem]">
+          <main className="px-4 mt-[3rem] lg:mt-0">
             <div className="w-full flex justify-between items-center">
               <div>
                 {" "}
@@ -26,7 +26,7 @@ const index = () => {
             </div>
 
             {/* Table */}
-            <div className="mt-4 xl:mt-9">
+            <div className="mt-4">
               <div className="relative overflow-x-auto  rounded-xl">
                 <table className="w-full bg-[#F3FAFF] rounded-xl border-[1px] border-[#e7e7e7] text-sm text-left text-[18px] leading-4 text-[#939393]">
                   {/* Table Head */}

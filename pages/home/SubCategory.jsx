@@ -9,7 +9,7 @@ import { BiDotsVerticalRounded } from "react-icons/bi";
 const SubCategory = () => {
   const router = useRouter();
   const handleClick = () => {
-    router.replace("/home");
+    router.replace("/home/TrainingDoc");
   };
   const goTo = () => {
     router.replace("Training");
