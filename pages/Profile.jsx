@@ -46,7 +46,7 @@ const Profile = () => {
                   src="/user-2.jpg"
                   height={100}
                   width={100}
-                  className="rounded-full md:h-[10rem] cursor-pointer overflow-hidden z-[98] shadow-md shadow-slate md:w-[10rem]"
+                  className="rounded-full h md:h-[10rem] cursor-pointer overflow-hidden z-[98] shadow-md shadow-slate md:w-[10rem]"
                   alt="user"
                 />
                 {hover && (
