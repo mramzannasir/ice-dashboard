@@ -19,7 +19,7 @@ const index = () => {
               </div>
               <div className="hidden md:block">
                 {" "}
-                <div className="border-[1px]  px-6 text-[#939393] flex justify-center items-center text-sm h-10 rounded-xl border-[#e7e7e7] cursor-pointer">
+                <div className="border-[1px]  px-6 py-4 text-[#939393] hover:text-white hover:bg-blue transition-all duration-500 flex justify-center items-center text-sm h-[41px] rounded-xl border-[#e7e7e7] cursor-pointer">
                   Collect selected items
                 </div>
               </div>

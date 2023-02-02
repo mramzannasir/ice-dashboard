@@ -70,3 +70,10 @@ ion-icon {
   width: 30px;
   height: 3px;
 }
+
+.bgdd {
+  background: linear-gradient(73.25deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+.card {
+  filter: drop-shadow(0 0 0.4rem rgba(10, 10, 5, 0.452));
+}

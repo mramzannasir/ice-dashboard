@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { useRouter } from "next/router";
 import { BiDotsVerticalRounded } from "react-icons/bi";
+import { BsPlus } from "react-icons/bs";
 
 const SubCategory = () => {
   const router = useRouter();
@@ -34,13 +35,20 @@ const SubCategory = () => {
                 <p className="text-base font-normal text-[#97AFC2]">Back</p>
               </div>
             </div>
-            <div className="w-full flex">
+            <div className="w-full flex items-center justify-between">
               <div>
                 <h1 className="headings font-medium mt-2">Sub-Category 1</h1>
               </div>
+              <div className="hidden md:block">
+                {" "}
+                <div className="border-[1px] py-[10px] px-[16px] w-[173px] h-[44px] text-[#939393] hover:text-white hover:bg-[#000000] transition-all duration-500  flex justify-center items-center text-sm  rounded-xl border-[#e7e7e7] cursor-pointer">
+                  <BsPlus size={28} />
+                  <p>Add Document</p>
+                </div>
+              </div>
             </div>
             {/* Today */}
-            <div className="w-full h-full flex flex-col mt-1">
+            <div className="w-full h-full flex flex-col mt-4 xl:mt-6">
               <div className="flex  items-center justify-between w-full">
                 <div>
                   <h1 className="text-[18px] leading-7 font-medium">Today</h1>

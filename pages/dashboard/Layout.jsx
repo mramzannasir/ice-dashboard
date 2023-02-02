@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
             className={`${
               width
                 ? "w-[10%] lg:w-[20%] xl:w-[12%] 2xl:[10%]"
-                : "w-[4%] lg:w-[7%] xl:w-[5%] 2xl:w-[4%]"
+                : "w-[4%] lg:w-[7%] xl:w-[5%] 2xl:w-[4.5%]"
             } w-[10%] h-full hidden lg:block transition-all duration-500`}>
             <Sidebar />
           </div>
@@ -54,25 +54,6 @@ const Layout = ({ children }) => {
                   <Rightbar />
                 </div>
               </Link>
-            </div>
-          </div>
-          {/* Bottom bar _____________________________________________________________________________________________ */}
-          <div className="lg:hidden w-full h-[3.4rem]  fixed bottom-0 bg-blue text-white">
-            <div className="flex justify-between px-2 items-center h-full w-full">
-              {Data.map((items, index) => (
-                <>
-                  <Link href={items.path}>
-                    <span
-                      className={`flex items-center   gap-3 transition-all duration-300 opacity-50 ${
-                        router.pathname == items.path
-                          ? "mt opacity-100"
-                          : undefined
-                      }`}>
-                      <img src={items.ico} alt="" className="" />
-                    </span>
-                  </Link>
-                </>
-              ))}
             </div>
           </div>
         </div>

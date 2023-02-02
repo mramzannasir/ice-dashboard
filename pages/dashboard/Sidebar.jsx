@@ -21,7 +21,13 @@ const Sidebar = () => {
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       />
       <div>
-        <div className="flex flex-col relative bg-blue  h-screen lg:h-[90rem] xl:h-screen transition-all duration-500">
+        <div className=" flex flex-col relative bg-blue  h-screen lg:h-[90rem] xl:h-[53rem] 3xl:h-screen transition-all duration-500">
+          <div className="px-1 flex w-full justify-center mt-7 items-center">
+            <Link href="home">
+              {" "}
+              <img src="/side-logo.png" alt="" />
+            </Link>
+          </div>
           <div>
             <button
               onClick={() => setWidth(!width)}
@@ -60,11 +66,11 @@ const Sidebar = () => {
               </>
             ))}
           </div>
-          <div className="absolute bottom-4 flex justify-center w-full">
+          <div className="absolute bottom-4 flex justify-center items-center w-full">
             <div
               className={`${
                 width ? "pl-8" : "justify-center "
-              } cursor-pointer gap-8  flex   w-full`}>
+              } cursor-pointer gap-3 items-center flex   w-full`}>
               <img src="/setting.png" alt="setting icons" />
               <span
                 className={`text-sm text-white opacity-50 font-normal transition-all duration-300 ${
