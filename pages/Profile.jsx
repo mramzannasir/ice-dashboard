@@ -69,7 +69,7 @@ const Profile = () => {
               <p className="title opacity-60  text-center md:text-left">
                 Lorem ipsum dolor, sit amet.
               </p>
-              <p className="text-lg opacity-90 text-center md:text-left">
+              <p className="text-lg opacity-90 text-center md:text-left px-2 md:px-0">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit
               </p>
               <div className="flex w-full items-center justify-center md:justify-start gap-2 mt-3">
