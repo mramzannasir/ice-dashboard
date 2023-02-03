@@ -29,7 +29,7 @@ const Navbar = () => {
       className="
      bg-white">
       <section className="flex items-center  w-full pt-[15px] 2xl:pt-[28px] px-1 2xl:px-6 justify-between">
-        <div className="w-[100%]  left-0 top-0 h-[35px] absolute px-1 lg:hidden bg-blue">
+        <div className="w-[100%]  left-0 top-0 h-[37px] absolute px-1 lg:hidden bg-blue">
           <div className="flex items-center justify-between">
             <div>
               <img src="/side-logo.png" alt="" />
@@ -73,7 +73,7 @@ const Navbar = () => {
           </div>
         )}
         {/* Search Box */}
-        <div className="mt-6">
+        <div className="mt-7">
           <div className="h-[35px] md:h-[44px]  w-[190px] md:w-[350px] rounded-xl 2xl:max-w-[503px] border-borderwhite  border-[1px] px-1 md:px-4 2xl:px-2 flex items-center justify-between">
             <div className="">
               <div className="flex items-center gap-1   md:gap-2">
