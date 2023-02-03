@@ -29,11 +29,17 @@ const Navbar = () => {
       className="
      bg-white">
       <section className="flex items-center  w-full pt-[15px] 2xl:pt-[28px] px-1 2xl:px-6 justify-between">
-        <div
-          onClick={() => setNav(true)}
-          className="absolute top-[1.6rem] right-2 lg:hidden">
-          <RiMenu3Fill size={25} />
+        <div className="w-[100%]  left-0 top-0 h-[35px] absolute px-1 lg:hidden bg-blue">
+          <div className="flex items-center justify-between">
+            <div>
+              <img src="/side-logo.png" alt="" />
+            </div>
+            <div onClick={() => setNav(true)} className="">
+              <RiMenu3Fill size={25} />
+            </div>
+          </div>
         </div>
+
         {nav && (
           <div className="absolute top-0 left-0 bg-[#03030352] h-full w-full z-[97]">
             <motion.div
@@ -67,10 +73,10 @@ const Navbar = () => {
           </div>
         )}
         {/* Search Box */}
-        <div>
+        <div className="mt-6">
           <div className="h-[35px] md:h-[44px]  w-[190px] md:w-[350px] rounded-xl 2xl:max-w-[503px] border-borderwhite  border-[1px] px-1 md:px-4 2xl:px-2 flex items-center justify-between">
             <div className="">
-              <div className="flex items-center gap-1  md:gap-2">
+              <div className="flex items-center gap-1   md:gap-2">
                 <div>
                   <CiSearch color="#939393" className="text-2xl" />
                 </div>
@@ -88,9 +94,9 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="hidden   md:block">
+        <div className="">
           {" "}
-          <div className="flex gap-4  md:gap-3 2xl:gap-6 md:pr-6 xl:pr-0 items-center ">
+          <div className="flex gap-4 mt-6 xl:mt-3 md:gap-3 2xl:gap-6 md:pr-6 xl:pr-0 items-center ">
             <div className="cursor-pointer" onClick={inFo}>
               <AiOutlineInfoCircle className="text-[1.4rem] md:text-2xl" />
             </div>
