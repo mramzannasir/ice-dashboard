@@ -35,7 +35,7 @@ const Navbar = () => {
               <img src="/side-logo.png" alt="" />
             </div>
             <div onClick={() => setNav(true)} className="">
-              <RiMenu3Fill size={25} />
+              <RiMenu3Fill color="#ffffff" size={25} />
             </div>
           </div>
         </div>
