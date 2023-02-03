@@ -32,7 +32,7 @@ const Navbar = () => {
         <div
           onClick={() => setNav(true)}
           className="absolute top-[1.6rem] right-2 lg:hidden">
-          <RiMenu3Fill size={20} />
+          <RiMenu3Fill size={25} />
         </div>
         {nav && (
           <div className="absolute top-0 left-0 bg-[#03030352] h-full w-full z-[97]">

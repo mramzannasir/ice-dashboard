@@ -36,7 +36,7 @@ const Login = () => {
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
                     placeholder="name@example.com"
-                    className="h-[40px] p-2 lg:mt-2 outline-none focus:outline-none border-[1px] rounded-xl border-[#e7e7e7 ]  text-[#939393] h-[54px] text-[16px] leading-6 font-normal"
+                    className="p-2 lg:mt-2  focus:outline-none border-[1px]   rounded-xl border-[#e7e7e7]  text-[#939393] h-[54px] text-[16px] leading-6 font-normal"
                   />
                 </div>
                 <div className="w-full mt-[15px] lg:mt-[25px] flex flex-col">
@@ -45,7 +45,7 @@ const Login = () => {
                     className="text-[16px] leading-6 font-normal">
                     Enter password
                   </label>
-                  <div className="h-[54px] relative bg-white   flex justify-between items-center lg:mt-2 rounded-xl border-[1px] border-[#e7e7e7 ]  text-[#939393] lg:h-[54px] text-[16px] leading-6 font-normal">
+                  <div className="h-[54px] relative bg-white   flex justify-between  items-center lg:mt-2 rounded-xl border-[1px] border-[#e7e7e7]  text-[#939393] lg:h-[54px] text-[16px] leading-6 font-normal">
                     <input
                       required
                       name="password"
